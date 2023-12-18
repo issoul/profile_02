@@ -15,13 +15,13 @@ body{
 body[data-pageid=about]::before{
     content: "";
     position: fixed;
-    top: 19.4666666667vw;
+    top: 116px;
     left: 50%;
     z-index: 1;
     transform: translateX(-50%);
-    width: 86.666666667vw;
-    height: 29.6vw;
-    background-image: url(./images/bg_txt01.png) no-repeat center cover;
+    width: 642px;
+    height: 219px;
+    background: url(../images/bg_txt01.png) no-repeat center/cover;
 }
 
 img{
@@ -60,6 +60,7 @@ p{
         align-items: center;
         padding: 15px;
         background-color: rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(30px);
         z-index: 2;
     }
         .menu_item, .contact_item{
@@ -71,6 +72,14 @@ p{
             font-family: 'Cormorant', serif;
             font-weight: 900;
             font-size: 1rem;
+        }
+        .menu_item:hover{
+            color: #E50B1A;
+            transition: 0.5s;
+        }
+        .contact_item:hover{
+            filter: brightness(4);
+            transition: 0.5s;
         }
 /* 메인 시작 */
 /* home */
@@ -118,6 +127,7 @@ p{
                     50%{background-position: 0 0;}
                     100%{background-position: 0 -100%;}
                 }
+
             .home_text2{
                 position: relative;
                 clear: both;
@@ -125,5 +135,14 @@ p{
                 font-family: 'Noto Serif KR', serif;
                 font-size: 1rem;
                 line-height: 1.5em;
-                margin-top: 3vw;
+                margin-top: 60px;
             }
+
+        .about{
+            position: relative;
+            background-color: #282828;
+            color: #e7eff2;
+            width: 100%;
+            height: 30vh;
+            top: 200px;
+        }
