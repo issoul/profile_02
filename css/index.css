@@ -496,3 +496,19 @@ a{
             margin: 0 0 13% 0;
         }
 }
+
+@media screen and (max-width: 455px) {
+    .footer-snsnavi{
+        width: 60%;
+        justify-content: center;
+        margin: 12% auto 6%;
+    }
+        .footer-snsnavi-item{
+            width: calc(100% / 3 - 20px);
+            max-width: 46px;
+            margin: 0 20px 13% 0;
+        }
+        .footer-snsnavi-item:nth-of-type(4n){
+            margin: 0 20px 13% 0;
+        }
+}
