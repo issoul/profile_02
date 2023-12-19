@@ -96,7 +96,6 @@ p{
 
 /* home */
     main{
-        width: 100%;
         position: absolute;
         z-index: 1;
     }
@@ -154,3 +153,12 @@ p{
                 line-height: 1.8rem;
                 margin-top: 60px;
             }
+
+@media all and (max-width: 400px) {
+    body[data-pageid=about]::before{
+        top: 19.4666666667vw;
+        width: 86.6666666667vw;
+        height: 29.6vw;
+    }
+    
+}
