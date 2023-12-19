@@ -73,14 +73,12 @@ p{
             font-weight: 900;
             font-size: 1rem;
         }
-        .menu_item:hover{
-            color: #E50B1A;
-            transition: 0.5s;
-        }
-        .contact_item:hover{
+        .menu_item:hover, .contact_item:hover{
             filter: brightness(4);
             transition: 0.5s;
+            cursor: pointer;
         }
+        
 /* 메인 시작 */
 /* home */
     main{
@@ -91,6 +89,9 @@ p{
         .home{
             position: relative;
             top: 100px;
+            width: 100%;
+            height: 75vh;
+            background: url(../images/bg_1920.png) no-repeat;
         }
             .home_text1{
                 position: relative;
@@ -144,5 +145,5 @@ p{
             color: #e7eff2;
             width: 100%;
             height: 30vh;
-            top: 200px;
+            top: 100px;
         }
