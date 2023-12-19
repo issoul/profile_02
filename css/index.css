@@ -155,7 +155,7 @@ p{
                 margin-top: 60px;
             }
 
-@media all and (max-width: 400px) {
+@media all and (max-width: 430px) {
     body[data-pageid=about]::before{
         top: 19.4666666667vw;
         width: 86.6666666667vw;
