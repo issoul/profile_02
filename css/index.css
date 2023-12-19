@@ -7,7 +7,7 @@
 
 html{
     font-size: 16px;
-    over-flow-x: hidden;
+    overflow-x: hidden;
 }
 
 body{
@@ -15,7 +15,7 @@ body{
     color: #282828;
     background-color: #e7eff2;
     letter-spacing: 0.08em;
-    over-flow-x: hidden;
+    overflow-x: hidden;
 }
 
 body[data-pageid=about]::before{
