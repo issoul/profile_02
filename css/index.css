@@ -48,7 +48,8 @@ p{
     margin-block-end: 1rem;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    font-family: 'Noto Serif KR', serif;
+    font-family: 'Open Sans', sans-serif;
+
 }
 
 
@@ -147,8 +148,9 @@ p{
                 position: relative;
                 clear: both;
                 text-align: center;
-                font-family: 'Noto Serif KR', serif;
-                font-size: 1rem;
-                line-height: 1.5rem;
+                font-family: 'Cormorant', serif;
+                font-weight: 500;
+                font-size: 1.4rem;
+                line-height: 1.8rem;
                 margin-top: 60px;
             }
