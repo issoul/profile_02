@@ -9,8 +9,7 @@
 }
 
 .text_wrap{
-    width: 100%;
-    max-width: 1200px;
+    width: 80%;
     margin: 0 auto;
     display: grid;
     grid-template-areas: "title text""content content";
