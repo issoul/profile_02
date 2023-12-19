@@ -97,7 +97,6 @@
 
 @media screen and (max-width:874px) {
     .text_wrap{
-        width: 80%;
         max-width: none;
         margin: 0 auto;
         display: grid;
