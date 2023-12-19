@@ -8,19 +8,19 @@
     padding: 5rem;
 }
 
-.about_wrap{
+.text_wrap{
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
     grid-template-areas: "title text""content content";
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 150px auto;
+    grid-template-rows: 250px auto;
     gap: 3vw 5vw;
     font-family: 'Cormorant', serif;
 }
 .section_title, .section_txt{
-    max-height: 150px;
+    max-height: 250px;
 }
     .section_title{
         grid-area: title;
@@ -30,7 +30,8 @@
             font-size: 5rem;
         }
         .section_title p{
-            font-size: 0.9rem;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1rem;
             text-transform: uppercase;
             font-weight: 300;
         }
@@ -39,14 +40,20 @@
         grid-area: text;
     }
         .section_txt div:nth-child(1){
-            height: 80px;
-            overflow: hidden;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1.1rem;
+            line-height: 1.5rem;
         }
         .more{
             display: flex;
             flex-flow: row nowrap;
             align-items: center;
             gap: 0.5rem;
+        }
+        .more p{
+            font-size: 1.4rem;
+            font-weight: 700;
+            font-family: 'Cormorant', serif;
         }
 
     .section_content{
@@ -77,54 +84,44 @@
 
 
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1044px) {
 
-    .about_wrap{
-        width: 100%;
-        max-width: 1200px;
+    .section_content img:nth-child(1){
+        transform: translateX(25px) rotate(-10deg) translateY(5px);
+    }
+    .section_content img:nth-child(2){
+        top: 200px;
+        transform: translateX(-25px) rotate(10deg) translateY(-5px);
+    }
+}
+
+@media screen and (max-width:874px) {
+    .text_wrap{
+        width: 80%;
+        max-width: none;
         margin: 0 auto;
         display: grid;
-        grid-template-areas: "title text""content content";
-        grid-template-columns: 1fr 2fr;
+        grid-template-areas: "title" "text" "content";
+        grid-template-columns: 1fr;
         grid-template-rows: 150px auto;
         gap: 3vw 5vw;
         font-family: 'Cormorant', serif;
     }
-    .section_title, .section_txt{
-        max-height: 150px;
+
+    .section_title{
+        grid-area: title;
+        text-align: center;
     }
-        .section_title{
-            grid-area: title;
-            text-align: left;
+    .section_txt{
+        grid-area: text;
+        text-align: center;
+    }
+        .more{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            gap: 0.5rem;
         }
-            .section_title h1{
-                font-size: 5rem;
-            }
-            .section_title p{
-                font-size: 0.9rem;
-                text-transform: uppercase;
-                font-weight: 300;
-            }
+
     
-        .section_txt{
-            grid-area: text;
-        }
-            .section_txt div:nth-child(1){
-                height: 80px;
-                overflow: hidden;
-            }
-            .more{
-                display: flex;
-                flex-flow: row nowrap;
-                align-items: center;
-                gap: 0.5rem;
-            }
-            
-    .section_content img:nth-child(1){
-        transform: translateX(20px) rotate(-10deg) translateY(5px);
-    }
-    .section_content img:nth-child(2){
-        top: 200px;
-        transform: translateX(-20px) rotate(10deg) translateY(-5px);
-    }
 }
