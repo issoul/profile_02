@@ -5,13 +5,17 @@
     box-sizing: border-box;
 }
 
+html{
+    font-size: 16px;
+}
+
 body{
     line-height: 1;
     color: #282828;
     background-color: #e7eff2;
     letter-spacing: 0.08em;
-    margin: 0;
 }
+
 body[data-pageid=about]::before{
     content: "";
     position: fixed;
@@ -34,14 +38,14 @@ img{
 }
 h1{
     font-weight: bold;
-    font-size: 2em;
+    font-size: 2rem;
     font-family: 'Cormorant', serif;
 
 }
 p{
     display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-family: 'Noto Serif KR', serif;
@@ -73,13 +77,22 @@ p{
             font-weight: 900;
             font-size: 1rem;
         }
-        .menu_item:hover, .contact_item:hover{
-            filter: brightness(4);
+        .menu_item a{
+            text-decoration: none;
+            color: #282828;
+        }
+        .menu_item a:hover{
+            border-bottom: 2px solid orangered;
+            cursor: pointer;
+        }
+        .contact_item:hover{
+            filter: brightness();
             transition: 0.5s;
             cursor: pointer;
         }
-        
+
 /* 메인 시작 */
+
 /* home */
     main{
         width: 100%;
@@ -92,6 +105,7 @@ p{
             width: 100%;
             height: 75vh;
             background: url(../images/bg_1920.png) no-repeat;
+            background-size: cover;
         }
             .home_text1{
                 position: relative;
@@ -103,7 +117,7 @@ p{
                 line-height: 1.3em;
             }
                 .home_text1>span{
-                    color: #E50B1A;
+                    color: orangered;
                 }
             .home_scroll{
                 position: relative;
@@ -135,15 +149,6 @@ p{
                 text-align: center;
                 font-family: 'Noto Serif KR', serif;
                 font-size: 1rem;
-                line-height: 1.5em;
+                line-height: 1.5rem;
                 margin-top: 60px;
             }
-
-        .about{
-            position: relative;
-            background-color: #282828;
-            color: #e7eff2;
-            width: 100%;
-            height: 30vh;
-            top: 100px;
-        }
