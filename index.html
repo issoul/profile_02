@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>02</title>
+    <title>02:Portfolio Site</title>
     <!-- google font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;700&family=Noto+Serif+KR:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;700&family=Noto+Serif+KR:wght@400;700&display=swap" rel="stylesheet">
     <!-- google icon-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <!--CSS start-->
     <link href="./css/reset.css" type="text/css" rel="stylesheet">
     <link href="./css/index.css" type="text/css" rel="stylesheet">
-
+    <link href="./css/about.css" type="text/css" rel="stylesheet">
+    
     <style>
         .material-symbols-outlined {
           font-variation-settings:
@@ -22,7 +23,7 @@
           'GRAD' 0,
           'opsz' 24
         }
-        </style>
+    </style>
 </head>
 <body data-pageid="about">
     <div class="wrap" style="opacity: 1; width: 100%;">
@@ -32,10 +33,11 @@
             </div>
             <nav class="menu_wrap">
                 <ul class="menu">
-                    <li class="menu_item">ABOUT</li>
-                    <li class="menu_item">SKILLS</li>
-                    <li class="menu_item">WORKS</li>
-                    <li class="menu_item">TESTIMONIAL</li>
+                    <li class="menu_item"><a href="#home">HOME</a></li>
+                    <li class="menu_item"><a href="#about">ABOUT</a></li>
+                    <li class="menu_item"><a href="#skills">SKILLS</a></li>
+                    <li class="menu_item"><a href="#works">WORKS</a></li>
+                    <li class="menu_item"><a href="#contact">CONTACT</a></li>
                 </ul>
             </nav>
             <div class="contact-wrap">
@@ -51,7 +53,7 @@
         </header>
 
         <main>
-            <section class="home">
+            <section class="home" id="home">
                 <div class="home_text1">
                     Song eun yeong<br>
                     <span>Front-end</span> Developer<br>
@@ -61,24 +63,64 @@
                     <div></div>
                 </div>
                 <div class="home_text2">
-                    반갑습니다.<br>
-                    프론트엔드 개발자를 희망하는 송은영 입니다.<br>
-                    디자인을 전공하고 예술을 사랑하는 개발자,<br>
-                    저에 대해 소개합니다.<br>
+                    Hello.<br>
+                    Song Eun-yeong wants to develop a professional.<br>
+                    A developer, who majored in design and love art<br>
+                    Introducing about me.<br>
                 </div>
 
             </section>
 
-            <section class="about">
+            <section class="section_container" id="about">
+                <div class="about_wrap">
+                    <div class="section_title">
+                        <h1>ABOUT</h1>
+                        <p>introduce myself</p>
+                    </div>
+                    <div class="section_txt">
+                        <div>
+                            I am a front-end developer born in 1991 living in Seoul.<br>
+                            After majoring in design and working as a web designer for several years, I was attracted to web coding. <br>
+                            I want to become a flexible thinking developer who can communicate more diversely using web designer experience.
+                        </div>
+                        <div class="more">
+                            <p>VIEW MORE</p>
+                            <div><span class="material-symbols-outlined" style="color: orangered;">
+                                arrow_forward
+                                </span></div>
+                        </div>
+                    </div>
+                    <div class="section_content">
+                        <div>
+                            <img src="./images/poster01.jpg">
+                            <img src="./images/poster02.jpg">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section_container" id="skills">
                 <div class="section_title">
-                    ABOUT
+                    <h1>SKILLS</h1>
+                    <p>introduce myself</p>
                 </div>
                 <div class="section_txt">
+                    <div>
+                        I am a front-end developer born in 1991 living in Seoul.<br>
+                        After majoring in design and working as a web designer for several years, I was attracted to web coding. <br>
+                        I want to become a flexible thinking developer who can communicate more diversely using web designer experience.
+                    </div>
+                    <div class="more">
+                        <p>VIEW MORE</p>
+                        <div><span class="material-symbols-outlined" style="color: orangered;">
+                            arrow_forward
+                            </span></div>
+                    </div>
+                </div>
+                <div class="section_content">
 
                 </div>
-                <div class="section_img">
-                    
-                </div>
+            </div>
             </section>
         </main>
     </div>
