@@ -159,23 +159,25 @@ p{
 
 @media all and (max-width: 874px) {
     body[data-pageid=about]::before{
-        top: 19.4666666667vw;
+        top: 17.4666666667vw;
         width: 86.6666666667vw;
         height: 29.6vw;
     }
 
-        .menu_wrap{
-            display: none;
-        }
-        
             .home_sub{
+                width: 80%;
+                margin: 40px auto 0;
                 font-size: 1.4rem;
-                margin-top: 40px;
                 line-height: 1.6rem;
             }
 }
 
+
 @media all and (max-width: 430px) {
+    .header_wrap{
+        display: none;
+    }
+    
     .home_title{
         font-size: 2.5rem;
     }
