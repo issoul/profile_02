@@ -1,0 +1,24 @@
+.skill_box{
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "coding design etc";
+    gap: 2rem;
+    width: 100%;
+}
+    .skill1, .skill2, .skill3{
+        background-color: white;
+        border-radius: 30px;
+        height: 35vw;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        padding: 2vw;
+        color: #282828;
+    }
+        .skill_icon{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+
+        }
