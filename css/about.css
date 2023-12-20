@@ -28,6 +28,11 @@
     }
 }
 
+@media screen and (max-width:430px) {
+    .section_content img{
+        width: 70%;
+    }
+}
 
 
 
