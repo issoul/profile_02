@@ -109,7 +109,7 @@ p{
             background: url(../images/bg_1920.png) no-repeat;
             background-size: cover;
         }
-            .home_text1{
+            .home_title{
                 position: relative;
                 clear: both;
                 text-align: center;
@@ -118,7 +118,7 @@ p{
                 letter-spacing: 0.08rem;
                 line-height: 1.3em;
             }
-                .home_text1>span{
+                .home_title>span{
                     color: orangered;
                 }
             .home_scroll{
@@ -145,7 +145,7 @@ p{
                     100%{background-position: 0 -100%;}
                 }
 
-            .home_text2{
+            .home_sub{
                 position: relative;
                 clear: both;
                 text-align: center;
@@ -162,5 +162,12 @@ p{
         width: 86.6666666667vw;
         height: 29.6vw;
     }
+
+
+            .home_title{
+                font-size: 4em;
+                letter-spacing: 0.08rem;
+                line-height: 1.3em;
+            }
     
 }
