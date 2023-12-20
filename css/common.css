@@ -76,7 +76,7 @@
     @media screen and (max-width:874px) {
 
     .section_container{
-        padding: 5rem 2rem;
+        padding: 5rem 0;
     }
         .text_wrap{
             margin: 0 auto;
