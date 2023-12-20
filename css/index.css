@@ -18,7 +18,7 @@ body{
     overflow-x: hidden;
 }
 
-body[data-pageid=about]::before{
+body[data-pageid=portfolio]::before{
     content: "";
     position: fixed;
     top: 116px;
@@ -58,6 +58,11 @@ p{
 
 /* PC 화면 시작 */
 /* 헤더 시작 */
+
+    .hamburger{
+        display: none;
+    }
+
     header{
         position: fixed;
         width: 100%;
@@ -68,6 +73,7 @@ p{
         padding: 15px;
         background-color: rgba(255, 255, 255, 0.5);
         backdrop-filter: blur(30px);
+        -webkit-backdrop-filter: blur(30px);
         z-index: 2;
     }
         .menu_item, .contact_item{
@@ -164,7 +170,7 @@ p{
 
 @media all and (max-width: 874px) {
 
-    body[data-pageid=about]::before{
+    body[data-pageid=portfolio]::before{
         top: 17.4666666667vw;
         width: 86.6666666667vw;
         height: 29.6vw;
@@ -180,11 +186,35 @@ p{
 
 
 @media all and (max-width: 693px) {
+
     .header_wrap{
         display: none;
     }
+    .hamburger{
+        display: block;
+        position: fixed;
+        top: 5vw;
+        right: 5vw;
+        width: 50px;
+        height: 50px;
+        color: white;
+        background-color: orangered;
+        text-align: center;
+        line-height: 60px;
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3) ;
+        border-radius: 100px;
+        z-index: 9;
+    }
     
+    .home_title{
+        font-size: 3.5rem;
+    }
+}
+
+@media all and (max-width: 430px){
+
     .home_title{
         font-size: 2.5rem;
     }
+
 }
