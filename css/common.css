@@ -13,7 +13,7 @@
 
 /* 섹션 텍스트 영역 css */
 .text_wrap{
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
     display: grid;
     grid-template-areas: "title text""content content";
@@ -79,6 +79,7 @@
         padding: 5rem 1rem;
     }
         .text_wrap{
+            width: 100%;
             margin: 0 auto;
             display: grid;
             grid-template-areas: "title" "text" "content";
