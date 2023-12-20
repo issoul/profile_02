@@ -1,68 +1,3 @@
-.section_container{
-    box-sizing: border-box;
-    position: relative;
-    background-color: #282828;
-    color: #e7eff2;
-    width: 100%;
-    top: 100px;
-    padding: 5rem;
-}
-
-.text_wrap{
-    width: 80%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-areas: "title text""content content";
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 250px auto;
-    gap: 3vw 5vw;
-    font-family: 'Cormorant', serif;
-}
-.section_title, .section_txt{
-    max-height: 250px;
-}
-    .section_title{
-        grid-area: title;
-        text-align: left;
-    }
-        .section_title h1{
-            font-size: 5rem;
-        }
-        .section_title p{
-            font-family: 'Open Sans', sans-serif;
-            font-size: 1rem;
-            text-transform: uppercase;
-            font-weight: 300;
-        }
-
-    .section_txt{
-        grid-area: text;
-    }
-        .section_txt div:nth-child(1){
-            font-family: 'Open Sans', sans-serif;
-            font-size: 1.1rem;
-            line-height: 1.5rem;
-        }
-        .more{
-            display: flex;
-            flex-flow: row nowrap;
-            align-items: center;
-            gap: 0.5rem;
-        }
-        .more p{
-            font-size: 1.4rem;
-            font-weight: 700;
-            font-family: 'Cormorant', serif;
-        }
-
-    .section_content{
-        grid-area: content;
-        position: relative;
-        width: 100%;
-        height: auto;
-        padding: 3vw;
-        text-align: center;
-    }
     .section_content>div{
         width: 100%;
         margin: 0 auto;
@@ -82,7 +17,7 @@
         }
 
 
-
+/*
 @media screen and (max-width:1044px) {
 
     .section_content img:nth-child(1){
@@ -93,33 +28,7 @@
         transform: translateX(-25px) rotate(10deg) translateY(-5px);
     }
 }
+*/
 
-@media screen and (max-width:874px) {
-    .text_wrap{
-        max-width: none;
-        margin: 0 auto;
-        display: grid;
-        grid-template-areas: "title" "text" "content";
-        grid-template-columns: 1fr;
-        grid-template-rows: 150px auto;
-        gap: 3vw 5vw;
-        font-family: 'Cormorant', serif;
-    }
 
-    .section_title{
-        grid-area: title;
-        text-align: center;
-    }
-    .section_txt{
-        grid-area: text;
-        text-align: center;
-    }
-        .more{
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: center;
-            gap: 0.5rem;
-        }
 
-    
-}
