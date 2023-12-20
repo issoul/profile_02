@@ -89,7 +89,7 @@ p{
             cursor: pointer;
         }
         .contact_item:hover{
-            filter: brightness();
+            filter: brightness(4);
             transition: 0.5s;
             cursor: pointer;
         }
@@ -106,7 +106,6 @@ p{
             position: relative;
             top: 100px;
             width: 100%;
-            height: 75vh;
             background: url(../images/bg_1920.png) no-repeat;
             background-size: cover;
         }
@@ -157,7 +156,7 @@ p{
                 margin-top: 60px;
             }
 
-@media all and (max-width: 430px) {
+@media all and (max-width: 874px) {
     body[data-pageid=about]::before{
         top: 19.4666666667vw;
         width: 86.6666666667vw;
