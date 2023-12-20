@@ -94,14 +94,13 @@ p{
             cursor: pointer;
         }
 
-/* 메인 시작 */
-
-/* home */
+    /* 메인 시작 */
     main{
         width: 100%;
         position: absolute;
         z-index: 1;
     }
+        /* home 시작 */
         .home{
             position: relative;
             top: 100px;
@@ -110,6 +109,7 @@ p{
             background-size: cover;
             padding-bottom: 100px;
         }
+            /* 메인 타이틀 문구 */
             .home_title{
                 position: relative;
                 clear: both;
@@ -122,6 +122,8 @@ p{
                 .home_title>span{
                     color: orangered;
                 }
+
+            /* 스크롤 애니메이션 */
             .home_scroll{
                 position: relative;
                 left: 50%;
@@ -145,7 +147,8 @@ p{
                     50%{background-position: 0 0;}
                     100%{background-position: 0 -100%;}
                 }
-
+            
+            /* 서브 문구 */
             .home_sub{
                 position: relative;
                 clear: both;
@@ -157,7 +160,10 @@ p{
                 margin-top: 60px;
             }
 
+
+
 @media all and (max-width: 874px) {
+
     body[data-pageid=about]::before{
         top: 17.4666666667vw;
         width: 86.6666666667vw;
