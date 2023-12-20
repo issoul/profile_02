@@ -162,11 +162,22 @@ p{
         width: 86.6666666667vw;
         height: 29.6vw;
     }
-
+    .home{
+        padding-bottom: 60px;
+    }
             .home_title{
-                font-size: 4em;
-                letter-spacing: 0.08rem;
-                line-height: 1.3em;
+                font-size: 3.5em;
             }
-    
+
+            .home_sub{
+                font-size: 1rem;
+                margin-top: 40px;
+                line-height: 1.6rem;
+            }
+}
+
+@media all and (max-width: 430px) {
+    .home_title{
+        font-size: 2.5em;
+    }
 }
