@@ -1,4 +1,5 @@
     .section_content>div{
+        position: relative;
         width: 100%;
         margin: 0 auto;
     }
@@ -29,6 +30,10 @@
 }
 
 @media screen and (max-width:430px) {
+    .section_content>div{
+        position: relative;
+        top: 50px;
+    }
     .section_content img{
         width: 70%;
     }
