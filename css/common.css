@@ -1,0 +1,101 @@
+/* 섹션 영역 공통 css */
+
+/* 섹션 박스 */
+.section_container{
+    box-sizing: border-box;
+    position: relative;
+    background-color: #282828;
+    color: #e7eff2;
+    width: 100%;
+    top: 100px;
+    padding: 5rem;
+}
+
+/* 섹션 텍스트 영역 css */
+.text_wrap{
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: "title text""content content";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 250px auto;
+    gap: 3vw 5vw;
+    font-family: 'Cormorant', serif;
+}
+.section_title, .section_txt{
+    max-height: 250px;
+}
+    /* 섹션 타이틀 */
+    .section_title{
+        grid-area: title;
+        text-align: left;
+    }
+        .section_title h1{
+            font-size: 5rem;
+        }
+        .section_title p{
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1rem;
+            text-transform: uppercase;
+            font-weight: 300;
+        }
+    
+    /* 섹션 서브 텍스트 */
+    .section_txt{
+        grid-area: text;
+    }
+        .section_txt div:nth-child(1){
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1.1rem;
+            line-height: 1.5rem;
+        }
+        .more{
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .more p{
+            font-size: 1.4rem;
+            font-weight: 700;
+            font-family: 'Cormorant', serif;
+        }
+    
+    /* 섹션 본문 */
+    .section_content{
+        grid-area: content;
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 3vw;
+        text-align: center;
+    }
+
+
+
+    @media screen and (max-width:874px) {
+        .text_wrap{
+            margin: 0 auto;
+            display: grid;
+            grid-template-areas: "title" "text" "content";
+            grid-template-columns: 1fr;
+            grid-template-rows: 150px auto;
+        }
+    
+        .section_title{
+            grid-area: title;
+            text-align: center;
+        }
+        .section_txt{
+            grid-area: text;
+            text-align: center;
+        }
+            .more{
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: center;
+                gap: 0.5rem;
+            }
+    
+        
+    }
