@@ -173,7 +173,7 @@ p{
 }
 
 
-@media all and (max-width: 430px) {
+@media all and (max-width: 693px) {
     .header_wrap{
         display: none;
     }
