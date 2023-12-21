@@ -3,22 +3,77 @@
     grid-template-columns: 2fr 2fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "coding design etc";
-    gap: 2rem;
+    gap: 2vw;
     width: 100%;
 }
     .skill1, .skill2, .skill3{
         background-color: white;
         border-radius: 30px;
         height: 35vw;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around;
+        display: grid;
+        grid-template-areas: "tag""icon";
+        grid-template-columns: 1fr;
+        grid-template-rows: 25% 75%;
         padding: 2vw;
         color: #282828;
     }
-        .skill_icon{
+        .skill_tag{
+            line-height: 95px;
+        }
+        .skill1>.skill_icon,
+        .skill2>.skill_icon{
+            grid-area: icon;
             display: flex;
             flex-flow: row wrap;
-            justify-content: space-between;
-
+            gap: 2vw;
+            justify-content: space-around;
+            align-items: center;
         }
+        .skill3>.skill_icon{
+            grid-area: icon;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .skill1 img, .skill2 img{
+            width: 40%;
+            height: 40%;
+        }
+        .skill3>.skill_icon img{
+            width: 100%;
+            height: 40%;
+        }
+
+@media all and (max-width: 874px) {
+    
+    .skill_box{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: "coding" "design" "etc";
+    }
+
+    
+    .skill1, .skill2{
+        height: 25rem;
+    }
+        .skill1 img, .skill2 img{
+            width: 31%;
+            height: 43%;
+        }
+
+
+    .skill3{
+        height: 18rem;
+    }
+
+    .skill3>.skill_icon{
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .skill3>.skill_icon img{
+        width: 30%;
+        height: 65%;
+    }
+}
