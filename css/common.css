@@ -25,6 +25,7 @@
 .section_title, .section_txt{
     max-height: 250px;
 }
+
     /* 섹션 타이틀 */
     .section_title{
         grid-area: title;
