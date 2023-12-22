@@ -1,0 +1,92 @@
+    .category{
+        display: flex;
+        justify-content: center;
+        margin: 2.5rem;
+        gap: 1rem;
+    }
+        .category_button{
+            position: relative;
+            color: orangered;
+            font-size: 1.1rem;
+            padding: 0.5rem 3cqh;
+            font-family: 'Cormorant', serif;
+            font-weight: 700;
+            border-radius: 50px;
+            border: 1px solid orangered;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+        .category_button:hover{
+            color: white;
+            background-color: orangered;
+        }
+
+        .category_selected{
+            background-color: orangered;
+            color: white;
+        }
+        .work_count{
+            position: absolute;
+            top: -10px;
+            right: 2px;
+            width: 14px;
+            height: 14px;
+            line-height: 14px;
+            font-size: 0.5rem;
+            border-radius: 100%;
+            background-color: white;
+            color: #282828;
+            opacity: 0;
+            transition: all 200ms;
+        }
+        .category_selected .work_count,
+        .category_button:hover .work_count{
+            opacity: 1;
+            top: 0;
+        }
+    .project_all{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 1rem;
+        margin: 2.5rem 0;
+    }
+        .project{
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+            .project_img{
+                width: 100%;
+            }
+            .project_text{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                color: white;
+                background-color: #282828;
+                opacity: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                transition: all 300ms;
+                transform: translateY(-10px);
+            }
+            .project_text:hover{
+                opacity: 0.8;
+                transform: translateY(0px);
+            }
+            .project_title::after{
+                content: "";
+                display: block;
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+                margin: 0.5rem 0;
+                width: 50%;
+                height: 2px;
+                background-color: orangered;
+            }
