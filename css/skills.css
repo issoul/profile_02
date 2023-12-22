@@ -1,15 +1,17 @@
+/* 스킬 박스 css 시작 */
 .skill_box{
     display: grid;
     grid-template-columns: 2fr 2fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 2.5fr;
     grid-template-areas: "coding design etc";
     gap: 2vw;
     width: 100%;
 }
+    /* 개별 스킬 박스 css */
     .skill1, .skill2, .skill3{
         background-color: white;
         border-radius: 30px;
-        height: 35vw;
+        height: 36vw;
         display: grid;
         grid-template-areas: "tag""icon";
         grid-template-columns: 1fr;
@@ -17,50 +19,115 @@
         padding: 2vw;
         color: #282828;
     }
-        .skill_tag{
-            line-height: 95px;
-        }
+
+        /* 1번째, 2번째 스킬박스 아이콘 전체 영역 css */
         .skill1>.skill_icon,
         .skill2>.skill_icon{
+            position: relative;
             grid-area: icon;
-            display: flex;
-            flex-flow: row wrap;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(2,1fr);
             gap: 2vw;
-            justify-content: space-around;
-            align-items: center;
+            background: #999;
+
         }
+
+
+        /* 3번째 스킬박스 아이콘 전체 영역 css */
         .skill3>.skill_icon{
             grid-area: icon;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2,1fr);
+            gap: 2vw;
+        }
+
+
+        /* img, p css */
+
+        .skill1 img, .skill2 img, .skill3 img{
+            width: 100%;
+            height: auto;
+        }
+
+        /* hover를 위한 css */
+        .icon_each{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            opacity: 80%;
+        }
+
+        .icon_text{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: bold;
+            border-radius: 10px;
+            background-color: orangered;
+            opacity: 0.5;
+            cursor: default;
+            color: white;
             display: flex;
-            flex-flow: column nowrap;
-            justify-content: space-around;
+            flex-direction: column;
+            justify-content: center;
             align-items: center;
         }
-        .skill1 img, .skill2 img{
-            width: 40%;
-            height: 40%;
-        }
-        .skill3>.skill_icon img{
-            width: 100%;
-            height: 40%;
+        .icon_text:hover{
+            opacity: 1;
         }
 
 @media all and (max-width: 874px) {
+    .skill1, .skill2, .skill3{
+        height: 50vw;
+    } 
+    .icon_text{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+        border-radius: 10px;
+        background-color: orangered;
+        opacity: 0;
+        cursor: default;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }  
+}
+
+@media all and (max-width: 430px) {
     
     .skill_box{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, 1fr);
         grid-template-areas: "coding" "design" "etc";
     }
-
+    .skill1, .skill2, .skill3{
+        background-color: white;
+        border-radius: 30px;
+        height: 38vw;
+        display: grid;
+        grid-template-areas: "tag""icon";
+        grid-template-columns: 1fr;
+        grid-template-rows: 25% 75%;
+        padding: 2vw;
+        color: #282828;
+    }
     
     .skill1, .skill2{
         height: 25rem;
     }
-        .skill1 img, .skill2 img{
-            width: 31%;
-            height: 43%;
-        }
 
 
     .skill3{
@@ -72,8 +139,5 @@
         justify-content: space-around;
         align-items: center;
     }
-    .skill3>.skill_icon img{
-        width: 30%;
-        height: 65%;
-    }
+
 }
