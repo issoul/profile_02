@@ -74,7 +74,7 @@ p{
         background-color: rgba(255, 255, 255, 0.5);
         backdrop-filter: blur(30px);
         -webkit-backdrop-filter: blur(30px);
-        z-index: 2;
+        z-index: 99;
     }
         .menu_item, .contact_item{
             position: relative;
@@ -103,7 +103,7 @@ p{
     /* 메인 시작 */
     main{
         width: 100%;
-        position: absolute;
+        position: relative;
         z-index: 1;
     }
         /* home 시작 */
