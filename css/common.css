@@ -4,11 +4,17 @@
 .section_container{
     box-sizing: border-box;
     position: relative;
-    background-color: #282828;
-    color: #e7eff2;
     width: 100%;
     top: 100px;
     padding: 5rem;
+}
+
+.type1{
+    background-color: #282828;
+    color: #e7eff2;
+}
+.type2{
+    color: #282828;
 }
 
 /* 섹션 텍스트 영역 css */
@@ -18,7 +24,7 @@
     display: grid;
     grid-template-areas: "title text""content content";
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 250px auto;
+    grid-template-rows: 200px auto;
     gap: 3vw 5vw;
     font-family: 'Cormorant', serif;
 }
