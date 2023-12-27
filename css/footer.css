@@ -1,5 +1,26 @@
 footer{
     width: 100%;
+    height: auto;
     background-color: #282828;
+    padding: 5rem;
     z-index: 3;
 }
+footer p{
+    color: white;
+}
+    .footer_logo{
+        width: 50px;
+        margin: 0 auto 2em;
+    }
+    .other{
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 0.9em;
+        font-weight: bold;
+    }
+    .copyright{
+        font-size: 9pt;
+        letter-spacing: normal;
+        font-weight: 300;
+        text-align: center;
+    }
