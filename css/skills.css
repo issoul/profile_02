@@ -8,7 +8,36 @@
     width: 100%;
 }
     /* 개별 스킬 박스 css */
-    .skill1, .skill2, .skill3{
+        .skill1{
+            background-color: white;
+            border-radius: 30px;
+            height: auto;
+            display: grid;
+            grid-template-areas: "a a""b c""d e";
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: 3em repeat(2,1fr);
+            gap: 1em;
+            padding: 2vw;
+            color: #282828;
+        }
+        .skill1 .skill_tag{
+            grid-area: a;
+        }
+        .skill1 .icon_each:first-child{
+            grid-area: b;
+        }
+        .skill1 .icon_each:nth-child(2){
+            grid-area: c;
+        }
+        .skill1 .icon_each:nth-child(2){
+            grid-area: d;
+        }
+        .skill1 .icon_each:last-child{
+            grid-area: e;
+        }
+
+
+        .skill2, .skill3{
         background-color: white;
         border-radius: 30px;
         height: 36vw;
@@ -81,7 +110,7 @@
         .icon_text:hover{
             opacity: 1;
         }
-
+/*
 @media all and (max-width: 874px) {
     .skill1, .skill2, .skill3{
         height: 50vw;
@@ -141,3 +170,4 @@
     }
 
 }
+*/
