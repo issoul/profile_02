@@ -2,7 +2,7 @@ footer{
     width: 100%;
     height: auto;
     background-color: #282828;
-    padding: 5rem;
+    padding: 3rem;
     z-index: 3;
 }
 footer p{
@@ -18,6 +18,21 @@ footer p{
         font-size: 0.9em;
         font-weight: bold;
     }
+        .snslink{
+            color: white;
+            display: flex;
+            flex-flow: row nowrap;
+            width: 30vw;
+            justify-content: space-between;
+            margin: 0 auto 2em;
+        }
+        .snslink li:hover{
+            transform: scale(1.2);
+            transition: all 0.3s;
+        }
+        .snslink img{
+            width: 25px;
+        }
     .copyright{
         font-size: 9pt;
         letter-spacing: normal;
