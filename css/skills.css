@@ -1,93 +1,90 @@
-/* 스킬 박스 css 시작 */
+/* 스킬 태그 css 시작 */
+.skill_tag{
+    display: grid;
+    grid-template-areas: "coding design etc";
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: auto;
+    gap: 2vw;
+    padding: 2vw 0;
+    text-align: center;
+}
+
+    .skill_tag li:first-child{
+        grid-area: coding;
+    }
+    .skill_tag li:nth-child(2){
+        grid-area: design;
+    }
+    .skill_tag li:last-child{
+        grid-area: etc;
+    }
+
+
+/* 아이콘 박스 css 시작 */
 .skill_box{
     display: grid;
     grid-template-columns: 2fr 2fr 1fr;
-    grid-template-rows: 2.5fr;
+    grid-template-rows: 2fr;
     grid-template-areas: "coding design etc";
     gap: 2vw;
     width: 100%;
 }
+
+    .icon_each{
+        position: relative;
+    }
+
     /* 개별 스킬 박스 css */
-        .skill1{
+        .skill1, .skill2{
             background-color: white;
             border-radius: 30px;
             height: auto;
             display: grid;
-            grid-template-areas: "a a""b c""d e";
+            grid-template-areas: "a b""c d";
             grid-template-columns: repeat(2,1fr);
-            grid-template-rows: 3em repeat(2,1fr);
+            grid-template-rows: repeat(2,1fr);
             gap: 1em;
             padding: 2vw;
-            color: #282828;
         }
-        .skill1 .skill_tag{
+
+        .skill1 .icon_each:first-child{
             grid-area: a;
         }
-        .skill1 .icon_each:first-child{
+        .skill1 .icon_each:nth-child(2){
             grid-area: b;
         }
         .skill1 .icon_each:nth-child(2){
             grid-area: c;
         }
-        .skill1 .icon_each:nth-child(2){
+        .skill1 .icon_each:last-child{
             grid-area: d;
         }
-        .skill1 .icon_each:last-child{
-            grid-area: e;
-        }
 
-
-        .skill2, .skill3{
-        background-color: white;
-        border-radius: 30px;
-        height: 36vw;
-        display: grid;
-        grid-template-areas: "tag""icon";
-        grid-template-columns: 1fr;
-        grid-template-rows: 25% 75%;
-        padding: 2vw;
-        color: #282828;
-    }
-
-        /* 1번째, 2번째 스킬박스 아이콘 전체 영역 css */
-        .skill1>.skill_icon,
-        .skill2>.skill_icon{
-            position: relative;
-            grid-area: icon;
+    /* 3번째 스킬박스 css */
+        .skill3{
+            background-color: white;
+            border-radius: 30px;
+            height: auto;
             display: grid;
-            grid-template-columns: repeat(2,1fr);
-            grid-template-rows: repeat(2,1fr);
-            gap: 2vw;
-            background: #999;
-
-        }
-
-
-        /* 3번째 스킬박스 아이콘 전체 영역 css */
-        .skill3>.skill_icon{
-            grid-area: icon;
-            display: grid;
+            grid-template-areas: "e""f";
             grid-template-columns: 1fr;
             grid-template-rows: repeat(2,1fr);
-            gap: 2vw;
+            gap: 1em;
+            padding: 2vw;
         }
 
-
-        /* img, p css */
-
-        .skill1 img, .skill2 img, .skill3 img{
-            width: 100%;
-            height: auto;
+        .skill3 .icon_each:first-child{
+            grid-area: e;
         }
-
-        /* hover를 위한 css */
-        .icon_each{
-            position: relative;
-            width: 100%;
-            height: 100%;
-            border-radius: 20px;
-            opacity: 80%;
+        .skill3 .icon_each:last-child{
+            grid-area: f;
         }
+            /* img, p css */
+            .skill1 img, .skill2 img, .skill3 img{
+                height: 100%;
+            }
+
+    /* hover를 위한 css */
 
         .icon_text{
             position: absolute;
@@ -97,9 +94,10 @@
             height: 100%;
             font-family: 'Open Sans', sans-serif;
             font-weight: bold;
-            border-radius: 10px;
+            border-radius: 1.2em;
+            text-transform: uppercase;
             background-color: orangered;
-            opacity: 0.5;
+            opacity: 0;
             cursor: default;
             color: white;
             display: flex;
@@ -109,7 +107,10 @@
         }
         .icon_text:hover{
             opacity: 1;
+            transition: all 300ms;
         }
+
+
 /*
 @media all and (max-width: 874px) {
     .skill1, .skill2, .skill3{
