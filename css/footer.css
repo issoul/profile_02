@@ -22,7 +22,7 @@ footer p{
             color: white;
             display: flex;
             flex-flow: row nowrap;
-            width: 30vw;
+            width: 230px;
             justify-content: space-between;
             margin: 0 auto 2em;
         }
