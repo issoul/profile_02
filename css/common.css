@@ -29,7 +29,7 @@
     font-family: 'Cormorant', serif;
 }
 .section_title, .section_txt{
-    max-height: 250px;
+    min-height: 250px;
 }
 
     /* 섹션 타이틀 */
