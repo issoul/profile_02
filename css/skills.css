@@ -1,4 +1,8 @@
 /* 스킬 태그 css 시작 */
+.m_skill_wrap{
+    display: none;
+}
+
 .skill_tag{
     display: grid;
     grid-template-areas: "coding design etc";
@@ -135,7 +139,7 @@
         align-items: center;
     }  
 }
-
+*/
 @media all and (max-width: 430px) {
     
     .skill_box{
@@ -171,4 +175,3 @@
     }
 
 }
-*/
