@@ -1,7 +1,5 @@
-    .section_content>div{
-        position: relative;
-        width: 100%;
-        margin: 0 auto;
+     .poster_wrap{
+        padding-top: 5em;
     }
         .poster_img{
             width: 100%;
@@ -30,10 +28,7 @@
 }
 
 @media screen and (max-width:430px) {
-    .section_content>div{
-        position: relative;
-        top: 50px;
-    }
+
     .poster_img{
         width: 70%;
     }
