@@ -6,7 +6,7 @@
     position: relative;
     width: 100%;
     top: 100px;
-    padding: 5rem;
+    padding: 5rem 0;
 }
 
 .type1{
@@ -29,7 +29,8 @@
     font-family: 'Cormorant', serif;
 }
 .section_title, .section_txt{
-    min-height: 250px;
+    height: auto;
+    margin-bottom: 2rem;
 }
 
     /* 섹션 타이틀 */
@@ -57,10 +58,12 @@
             line-height: 1.5rem;
         }
         .more{
+            position: relative;
             display: flex;
             flex-flow: row nowrap;
             align-items: center;
             gap: 0.5rem;
+            transition: all 300ms;
         }
         .more p{
             font-size: 1.4rem;
@@ -70,7 +73,6 @@
 
         .more:hover{
             transform: scale(1.1);
-            transition: all 300ms;
             cursor: pointer;
         }
     
@@ -80,19 +82,22 @@
         position: relative;
         width: 100%;
         height: auto;
-        padding: 3vw 0;
+        padding: 0 0 3vw;
         text-align: center;
     }
-
+        .section_content>div{
+            position: relative;
+            width: 100%;
+        }
 
 
     @media screen and (max-width:874px) {
 
     .section_container{
-        padding: 5rem 1.3rem;
+        padding: 5rem 0;
     }
         .section_wrap{
-            width: 100%;
+            width: 90%;
             margin: 0 auto;
             display: grid;
             grid-template-areas: "title" "text" "content";
