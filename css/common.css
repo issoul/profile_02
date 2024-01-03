@@ -5,7 +5,6 @@
     box-sizing: border-box;
     position: relative;
     width: 100%;
-    top: 100px;
     padding: 5rem 0;
 }
 
@@ -97,7 +96,7 @@
         padding: 5rem 0;
     }
         .section_wrap{
-            width: 90%;
+            width: 80%;
             margin: 0 auto;
             display: grid;
             grid-template-areas: "title" "text" "content";
