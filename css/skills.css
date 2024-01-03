@@ -86,6 +86,7 @@
             /* img, p css */
             .skill1 img, .skill2 img, .skill3 img{
                 height: 100%;
+                border-radius: 20px;
             }
 
     /* hover를 위한 css */
@@ -98,7 +99,7 @@
             height: 100%;
             font-family: 'Open Sans', sans-serif;
             font-weight: bold;
-            border-radius: 1.2em;
+            border-radius: 20px;
             text-transform: uppercase;
             background-color: orangered;
             opacity: 0;
