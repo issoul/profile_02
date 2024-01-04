@@ -1,7 +1,7 @@
     .category{
         display: flex;
         justify-content: center;
-        margin: 2.5rem;
+        margin: 8rem auto 2.5rem;
         gap: 1rem;
     }
         .category_button{
