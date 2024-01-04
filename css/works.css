@@ -90,3 +90,13 @@
                 height: 2px;
                 background-color: orangered;
             }
+
+@media screen and (max-width:430px) {
+    .category{
+        flex-flow: column;
+        margin: 4rem auto 2.5rem;
+    }
+    .category li button{
+        width: 50%;
+    }
+}
