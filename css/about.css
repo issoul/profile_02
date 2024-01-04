@@ -11,13 +11,23 @@
             transform: rotate(-10deg)  translateY(40px);
         }
         .poster_img:nth-child(2){
-            top: 200px;
             transform: rotate(10deg) translateY(-40px);;
         }
 
+@media screen and (max-width:1294px) {
+    .poster_img{
+        width: 70%;
+    }
+    .poster_img:nth-child(1){
+        transform: translateX(25px) rotate(-10deg) translateY(5px);
+    }
+    .poster_img:nth-child(2){
+        top: 200px;
+        transform: translateX(-25px) rotate(10deg) translateY(-5px);
+    }
+}
 
-@media screen and (max-width:1279px) {
-
+@media screen and (max-width:945px) {
     .poster_img:nth-child(1){
         transform: translateX(25px) rotate(-10deg) translateY(5px);
     }
@@ -29,9 +39,6 @@
 
 @media screen and (max-width:430px) {
 
-    .poster_img{
-        width: 70%;
-    }
 }
 
 
