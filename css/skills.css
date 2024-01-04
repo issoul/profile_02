@@ -101,7 +101,7 @@
             font-weight: bold;
             border-radius: 20px;
             text-transform: uppercase;
-            background-color: orangered;
+            background-color: rgba(255, 69, 0, 0.9);
             opacity: 0;
             cursor: default;
             color: white;
