@@ -53,6 +53,9 @@ p{
     font-family: 'Open Sans', sans-serif;
 
 }
+strong{
+    color: orangered;
+}
 
 
 
@@ -73,7 +76,7 @@ p{
     }
         .header_wrap{
             position: relative;
-            width: 80%;
+            width: 70%;
             margin: 0 auto;
             display: flex;
             flex-flow: row nowrap;
@@ -172,24 +175,16 @@ p{
 
 
 
-@media all and (max-width: 874px) {
+
+
+
+@media all and (max-width: 945px) {
 
     body[data-pageid=portfolio]::before{
-        top: 17.4666666667vw;
+        top: 5vw;
         width: 86.6666666667vw;
         height: 29.6vw;
     }
-
-            .home_sub{
-                width: 80%;
-                margin: 40px auto 0;
-                font-size: 1.4rem;
-                line-height: 1.8rem;
-            }
-}
-
-
-@media all and (max-width: 830px) {
 
     header{
         display: none;
@@ -213,6 +208,7 @@ p{
     .home_title{
         font-size: 3.7rem;
     }
+
 }
 
 @media all and (max-width: 430px){
