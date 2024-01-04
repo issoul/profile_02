@@ -181,7 +181,7 @@ strong{
 @media all and (max-width: 945px) {
 
     body[data-pageid=portfolio]::before{
-        top: 5vw;
+        top: 80px;
         width: 86.6666666667vw;
         height: 29.6vw;
     }
@@ -213,12 +213,12 @@ strong{
 
 @media all and (max-width: 430px){
 
-    .home_title{
-        font-size: 3rem;
-    }
-    .home_sub{
-        font-size: 1.2rem;
-        line-height: 1.5rem;
-    }
+        .home_title{
+            font-size: 3rem;
+        }
+        .home_sub{
+            font-size: 1.2rem;
+            line-height: 1.5rem;
+        }
 
 }
