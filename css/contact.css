@@ -1,15 +1,15 @@
+
+#contact{
+    background: url(../images/bg_1920.png) no-repeat;
+    background-size: cover;
+}
+
 .contact_wrap{
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     gap: 2vw;
-    
     margin-bottom: 100px;
-}
-#contact{
-    padding: 0 0 5rem;
-    background: url(../images/bg_1920.png) no-repeat;
-    background-size: cover;
 }
 
     .input_form{
@@ -54,5 +54,29 @@
             line-height: 1.3rem;
         }
         .send_button h1{
+            filter: brightness(0.4);
             text-transform: uppercase;
         }
+    .send_button:hover{
+        transform: translate(3px, -2px);
+        box-shadow: 1px 1px 5px 1px #666;
+        transition: all 0.5s;
+
+    }
+    .send_button:hover p{
+        filter: brightness(0.4);
+        transition: all 0.5s;
+    }
+    .send_button:hover h1{
+        filter: brightness(1);
+        transition: all 0.5s;
+    }
+
+@media screen and (max-width:430px) {
+    .contact_wrap{
+        flex-flow: column nowrap;
+    }
+    #contact_title{
+        word-wrap: break-word;
+    }
+}
