@@ -10,52 +10,52 @@ html{
     overflow-x: hidden;
 }
 
-body{
-    line-height: 1;
-    color: #282828;
-    background-color: #e7eff2;
-    letter-spacing: 0.08em;
-    overflow-x: hidden;
-}
+    body{
+        line-height: 1;
+        color: #282828;
+        background-color: #e7eff2;
+        letter-spacing: 0.08em;
+        overflow-x: hidden;
+    }
 
-body[data-pageid=portfolio]::before{
-    content: "";
-    position: fixed;
-    top: 116px;
-    left: 50%;
-    z-index: 1;
-    transform: translateX(-50%);
-    width: 642px;
-    height: 219px;
-    background: url(../images/bg_txt01.png) no-repeat center/cover;
-}
+    body[data-pageid=portfolio]::before{
+        content: "";
+        position: fixed;
+        top: 116px;
+        left: 50%;
+        z-index: 1;
+        transform: translateX(-50%);
+        width: 642px;
+        height: 219px;
+        background: url(../images/bg_txt01.png) no-repeat center/cover;
+    }
 
-img{
-    height: auto;
-    max-width: 100%;
-    width: 100%;
-    transform: translateZ(0);
-    overflow: clip;
-    overflow-clip-margin: content-box;
-}
-h1{
-    font-weight: bold;
-    font-size: 2rem;
-    font-family: 'Cormorant', serif;
+        img{
+            height: auto;
+            max-width: 100%;
+            width: 100%;
+            transform: translateZ(0);
+            overflow: clip;
+            overflow-clip-margin: content-box;
+        }
+        h1{
+            font-weight: bold;
+            font-size: 2rem;
+            font-family: 'Cormorant', serif;
 
-}
-p{
-    display: block;
-    margin-block-start: 1rem;
-    margin-block-end: 1rem;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-family: 'Open Sans', sans-serif;
+        }
+        p{
+            display: block;
+            margin-block-start: 1rem;
+            margin-block-end: 1rem;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-family: 'Open Sans', sans-serif;
 
-}
-strong{
-    color: orangered;
-}
+        }
+        strong{
+            color: orangered;
+        }
 
 
 
