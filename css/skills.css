@@ -2,6 +2,9 @@
 .m_skill_wrap{
     display: none;
 }
+.skill_tag_940{
+    display: none;
+}
 
 .skill_tag{
     display: grid;
@@ -22,6 +25,7 @@
     .skill_tag li:last-child{
         grid-area: etc;
     }
+
 
 
 /* 아이콘 박스 css 시작 */
@@ -115,6 +119,32 @@
             opacity: 1;
             transition: all 300ms;
         }
+
+        
+@media all and (max-width: 940px) {
+    .skill_tag{
+        display: none;
+    }
+    .skill_tag_940{
+        display: block;
+    }
+    .skill_tag_940:nth-child(n+2){
+        margin-top: 1.5rem;
+    }
+    .skill_box{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "coding" "design" "etc";
+    }
+
+    .skill3{
+        grid-template-areas: "e f";
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 1fr;
+    }
+
+}
+
 
 
 @media all and (max-width: 430px) {
