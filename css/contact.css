@@ -8,7 +8,7 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    gap: 2vw;
+    gap: 3vw;
     margin-bottom: 100px;
 }
 
@@ -36,18 +36,38 @@
         border-radius: 10px;
         height: 6rem;
     }
-
-    .send_button{
-        box-sizing: border-box;
-        width: 50%;
-        height: auto;
-        background-color: #282828;
-        color: white;
-        padding: 2em 2em;
+    .c_intro_box{
         display: flex;
         flex-flow: column wrap;
         border-radius: 10px;
         justify-content: space-between;
+    }
+        .c_intro_box h3{
+            text-align: left;
+            font-size: 2rem;
+            width: 100%;
+            font-weight: bold;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid orangered;
+        }
+        .c_intro_box p{
+            text-align: left;
+            font-size: 0.9rem;
+            line-height: 1rem;
+            letter-spacing: 0.05em;
+            width: 100%;
+            padding-bottom: 1rem;
+        }
+
+    .send_button{
+        box-sizing: border-box;
+        width: 100%;
+        height: auto;
+        background-color: #282828;
+        color: white;
+        padding: 2em 2em;
+        border-radius: 10px;
+
     }
 
         .send_button p{
@@ -58,7 +78,7 @@
             text-transform: uppercase;
         }
     .send_button:hover{
-        transform: translate(3px, -2px);
+        transform: translate(0, -2px);
         box-shadow: 1px 1px 5px 1px #666;
         transition: all 0.5s;
 
@@ -72,11 +92,18 @@
         transition: all 0.5s;
     }
 
-@media screen and (max-width:430px) {
+@media screen and (max-width:700px) {
     .contact_wrap{
         flex-flow: column nowrap;
     }
     #contact_title{
         word-wrap: break-word;
+    }
+
+    .c_intro_box h3{
+        text-align: center;   
+    }
+    .c_intro_box p{
+        text-align: center;
     }
 }
