@@ -99,4 +99,9 @@
     .category li button{
         width: 50%;
     }
+
+    .project_all{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
 }
