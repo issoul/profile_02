@@ -41,7 +41,7 @@
         <header>
             <div class="header_wrap">
                 <div class="logo">
-                    <img src="./images/logo.png" style="height: 24px;">
+                    <img src="./images/logo.png" style="width: 60px; height: 24px;">
                 </div>
                 <nav class="menu_wrap">
                     <ul class="menu">
@@ -81,6 +81,7 @@
                     Song eun yeong<br>
                     <span>Front-end</span> Engineer<br>
                     Portfolio<br>
+                    
                 </div>
                 <div class="home_scroll">
                     <div></div>
@@ -314,25 +315,25 @@
                             <img src="https://static.wixstatic.com/media/fb5049_5f8e26eb07394d5c8ba85b6ab2d7d674~mv2.png/v1/fill/w_889,h_480,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/Kia%20-%20Home%20NEW.png">
                         </div>
                         <ul class="category">
-                            <li>
-                                <button class="category_button category_selected">All
+                            <li class="cate_menu_item">
+                                <button class="category_button category_selected" data-category="all">All
                                 <span class="work_count">8</span></button>
                             </li>
-                            <li>
-                                <button class="category_button">Front-end
+                            <li class="cate_menu_item">
+                                <button class="category_button" data-category="front-end">Front-end
                                 <span class="work_count">3</span></button>
                             </li>
-                            <li>
-                                <button class="category_button">Design
+                            <li class="cate_menu_item">
+                                <button class="category_button" data-category="design">Design
                                 <span class="work_count">3</span></button>
                             </li>
-                            <li>
-                                <button class="category_button">Mobile
+                            <li class="cate_menu_item">
+                                <button class="category_button" data-category="mobile">Mobile
                                 <span class="work_count">2</span></button>
                             </li>
                         </ul>
                         <ul class="project_all">
-                            <li class="project">
+                            <li class="project" data-type="front-end">
                                 <a href="#" target="_blank">
                                     <img class="project_img" src="images/project_01.png" alt="project_01 image">
                                     <div class="project_text">
@@ -341,7 +342,7 @@
                                     </div>
                                 </a>
                             </li>
-                            <li class="project">
+                            <li class="project" data-type="front-end">
                                 <a href="#" target="_blank">
                                     <img class="project_img" src="images/project_02.png" alt="project_02 image">
                                     <div class="project_text">
@@ -350,7 +351,7 @@
                                     </div>
                                 </a>
                             </li>
-                            <li class="project">
+                            <li class="project" data-type="front-end">
                                 <a href="#" target="_blank">
                                     <img class="project_img" src="images/project_03.png" alt="project_03 image">
                                     <div class="project_text">
@@ -359,7 +360,7 @@
                                     </div>
                                 </a>
                             </li>
-                            <li class="project">
+                            <li class="project" data-type="design">
                                 <a href="#" target="_blank">
                                     <img class="project_img" src="images/project_04.png" alt="project_04 image">
                                     <div class="project_text">
@@ -368,7 +369,7 @@
                                     </div>
                                 </a>
                             </li>
-                            <li class="project">
+                            <li class="project" data-type="design">
                                 <a href="#" target="_blank">
                                     <img class="project_img" src="images/project_05.png" alt="project_05 image">
                                     <div class="project_text">
@@ -377,7 +378,7 @@
                                     </div>
                                 </a>
                             </li>
-                            <li class="project">
+                            <li class="project" data-type="design">
                                 <a href="#" target="_blank">
                                     <img class="project_img" src="images/project_06.png" alt="project_06 image">
                                     <div class="project_text">
@@ -386,7 +387,7 @@
                                     </div>
                                 </a>
                             </li>
-                            <li class="project">
+                            <li class="project" data-type="mobile">
                                 <a href="#" target="_blank">
                                     <img class="project_img" src="images/project_07.png" alt="project_07 image">
                                     <div class="project_text">
@@ -395,7 +396,7 @@
                                     </div>
                                 </a>
                             </li>
-                            <li class="project">
+                            <li class="project"  data-type="mobile">
                                 <a href="#" target="_blank">
                                     <img class="project_img" src="images/project_08.png" alt="project_08 image">
                                     <div class="project_text">
@@ -404,6 +405,8 @@
                                     </div>
                                 </a>
                             </li>
+            
+            
                         </ul>
                     </div>
                 </div>
