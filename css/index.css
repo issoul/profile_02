@@ -141,9 +141,13 @@ html{
                 letter-spacing: 0.08rem;
                 line-height: 1.3em;
             }
+                
                 .home_title>span{
                     color: orangered;
+                    border-right: 1px solid #222;
+                    overflow: hidden;
                 }
+
 
             /* 스크롤 애니메이션 */
             .home_scroll{
