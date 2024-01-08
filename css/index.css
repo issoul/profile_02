@@ -137,14 +137,32 @@ html{
                 clear: both;
                 text-align: center;
                 font-family: 'Cormorant', serif;
-                font-size: 5rem;
+                font-size: 55pt;
                 letter-spacing: 0.08rem;
                 line-height: 1.3em;
             }
                 
-                .home_title>span{
+                .home_title div{
+                    width: 350px;
+                    margin: 0 auto;
+                    animation: typing 2.5s steps(22) infinite , blink .5s step-end infinite;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    border-right: 1px solid #282828;
                     color: orangered;
                 }
+
+                @keyframes typing {
+                    from {
+                      width: 0
+                    }
+                  }
+                      
+                  @keyframes blink {
+                    50% {
+                      border-color: transparent
+                    }
+                  }
 
 
             /* 스크롤 애니메이션 */
@@ -242,7 +260,11 @@ html{
         }
 
     .home_title{
-        font-size: 3.7rem;
+        font-size: 45pt;
+
+    }
+    .home_title div{
+        width: 290px;
     }
 
 }
@@ -250,7 +272,10 @@ html{
 @media all and (max-width: 430px){
 
         .home_title{
-            font-size: 3rem;
+            font-size: 30pt;
+        }
+        .home_title div{
+            width: 190px;
         }
         .home_sub{
             font-size: 1.2rem;
