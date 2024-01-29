@@ -18,12 +18,11 @@ var clo = document.querySelector('#close_icon');
         ham.style.display=state[i];
         i++;
 
-        clo.style.display=state[j];
-        j--
-
         if(j<0){
             j=1;
         }
+        clo.style.display=state[j];
+        j--
 
     }
 
